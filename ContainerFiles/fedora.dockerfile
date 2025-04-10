@@ -1,15 +1,15 @@
-FROM quay.io/fedora/fedora-toolbox:latest
+FROM quay.io/fedora/fedora-toolbox:42
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
       summary="An example ContainerFile to demonstrate multiple image builds." \
-      maintainer="faeizmahrus@outlook.com"
+      maintainer="patricklyc@berkeley.edu"
 
 # Copy the setup scripts and package list
-COPY ../scripts/fedora-example.sh /
+COPY ../scripts/fedora-build.sh /
 COPY ../scripts/distrobox-shims.sh /
-COPY ../packages/fedora-example.packages /
+COPY ../packages/fedora.packages /
 
 # Run the setup scripts
-RUN chmod +x fedora-example.sh distrobox-shims.sh && /fedora-example.sh
-RUN rm /fedora-example.sh /distrobox-shims.sh /fedora-example.packages
+RUN chmod +x fedora-build.sh distrobox-shims.sh && /fedora-build.sh
+RUN rm /fedora-build.sh /distrobox-shims.sh /fedora.packages
