@@ -28,8 +28,8 @@ jobs:
       fail-fast: false
       matrix:
         containerfile: 
-          - arch
-          - fedora
+          - arch.dockerfile
+          - fedora.dockerfile
     steps:
       # Clone code to runner
       - name: Checkout
