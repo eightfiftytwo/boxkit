@@ -19,15 +19,17 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm base-devel fish git
 
 # Install packages
-sudo pacman -S --needed --noconfirm \
-  fish neovim bat fd fzf eza ripgrep-all tealdeer fastfetch \
-  restic chezmoi age man-db man-pages wl-clipboard \
-  xh iperf3 fx jless tokei hyperfine \
-  gcc go elixir python-pip npm pnpm cmake \
-  zed ghostty \
-  lazygit gitui git-delta \
-  yt-dlp ffmpeg aria2 \
-  python-secretstorage python-mutagen python-brotli python-websockets
+grep -v '^#' ./arch.packages | xargs yay -S --needed --noconfirm
+
+# sudo pacman -S --needed --noconfirm \
+#   fish neovim bat fd fzf eza ripgrep-all tealdeer fastfetch \
+#   restic chezmoi age man-db man-pages wl-clipboard \
+#   xh iperf3 fx jless tokei hyperfine \
+#   gcc go elixir python-pip npm pnpm cmake \
+#   zed ghostty \
+#   lazygit gitui git-delta \
+#   yt-dlp ffmpeg aria2 \
+#   python-secretstorage python-mutagen python-brotli python-websockets
 
 # Save disk space
 # intellij-idea-community-edition jdk-openjdk
