@@ -26,11 +26,11 @@ RUN echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 USER builder
 WORKDIR /tmp/yay-build
-COPY ../scripts/arch-build.sh ./
+COPY ../scripts/arch-build-aur.sh ./
+COPY ../packages/aur.packages ./
 RUN /tmp/yay-build/arch-build-aur.sh
-RUN rm ./arch-build-aur.sh 
+RUN rm ./arch-build-aur.sh ./aur.packages
 
 USER root
 RUN rm -rf /tmp/yay-build
 RUN sed -i '$d' /etc/sudoers
-RUN rm /arch-build-aur.sh /aur.packages
