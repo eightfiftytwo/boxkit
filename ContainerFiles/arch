@@ -15,6 +15,8 @@ COPY ../packages/aur.packages /
 RUN chmod +x arch-build.sh distrobox-shims.sh && /arch-build.sh
 RUN rm /arch-build.sh /distrobox-shims.sh /arch.packages
 
+# Setup AUR helper
+# adapted from: https://gustawdaniel.com/posts/en/how-to-install-yay-on-pure-archlinux-image/
 RUN mkdir -p /tmp/yay-build
 COPY ../scripts/arch-build-aur.sh /tmp/yay-build/
 
@@ -24,7 +26,9 @@ RUN echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 USER builder
 WORKDIR /tmp/yay-build
-RUN ./arch-build-aur.sh
+COPY ../scripts/arch-build.sh ./
+RUN /tmp/yay-build/arch-build-aur.sh
+RUN rm ./arch-build-aur.sh 
 
 USER root
 RUN rm -rf /tmp/yay-build
