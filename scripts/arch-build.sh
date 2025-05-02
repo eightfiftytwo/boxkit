@@ -28,7 +28,7 @@ su - yayay -c "git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-build/ya
 su - yayay -c "cd /tmp/yay-build/yay && makepkg -si --noconfirm"
 
 # Install packages
-grep -v '^#' ./arch.packages | xargs su - yayay -c "yay -S --needed --noconfirm {}"
+grep -v '^#' ./arch.packages | xargs yay -S --needed --noconfirm
 
 # sudo pacman -S --needed --noconfirm \
 #   fish neovim bat fd fzf eza ripgrep-all tealdeer fastfetch \
