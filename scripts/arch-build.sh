@@ -18,8 +18,17 @@ sudo reflector \
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm base-devel fish git
 
+# AUR helper setup
+# https://gustawdaniel.com/posts/en/how-to-install-yay-on-pure-archlinux-image/
+mkdir -p /tmp/yay-build
+useradd -m -G wheel builder && passwd -d builder
+chown -R builder:builder /tmp/yay-build
+echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
+su - builder -c "git clone https://aur.archlinux.org/yay.git /tmp/yay-build/yay"
+su - builder -c "cd /tmp/yay-build/yay && makepkg -si --noconfirm"
+
 # Install packages
-grep -v '^#' ./arch.packages | xargs yay -S --needed --noconfirm
+grep -v '^#' ./arch.packages | xargs su - builder -c "yay -S --needed --noconfirm \{\}"
 
 # sudo pacman -S --needed --noconfirm \
 #   fish neovim bat fd fzf eza ripgrep-all tealdeer fastfetch \
