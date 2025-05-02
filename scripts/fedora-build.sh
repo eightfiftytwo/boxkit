@@ -8,6 +8,3 @@ sudo dnf install -y \
 sudo dnf upgrade --refresh -y
 
 grep -v '^#' ./fedora.packages | xargs sudo dnf install -y 
-
-# sudo dnf install -y \
-#   fish neovim fzf fd-find xeyes

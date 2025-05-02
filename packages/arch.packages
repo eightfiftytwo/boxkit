@@ -44,8 +44,6 @@ zed
 lazygit 
 gitui 
 git-delta 
-shellcheck-bin
-vscodium-bin
 # media
 yt-dlp 
 ffmpeg 
@@ -54,6 +52,21 @@ python-secretstorage
 python-mutagen 
 python-brotli 
 python-websockets
-gallery-dl-bin
-python-curl-cffi 
-libcurl-impersonate-bin
+pipewire-jack 
+wireplumber
+# Save disk space
+#intellij-idea-community-edition 
+#jdk-openjdk
+# Archived packages
+#helix 
+#lapce 
+#sd 
+#httpie 
+#difftastic 
+#procs 
+#zellij 
+#nmap 
+#sshfs 
+#fuse2 
+#b3sum 
+#torbrowser-launcher

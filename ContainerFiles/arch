@@ -9,13 +9,14 @@ LABEL com.github.containers.toolbox="true" \
 COPY ../scripts/arch-build.sh /
 COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/arch.packages /
+COPY ../packages/aur.packages /
 
 # Run the setup scripts
 RUN chmod +x arch-build.sh distrobox-shims.sh && /arch-build.sh
 RUN rm /arch-build.sh /distrobox-shims.sh /arch.packages
 
 RUN mkdir -p /tmp/yay-build
-COPY ../scripts/arch-build-nonroot.sh /tmp/yay-build/
+COPY ../scripts/arch-build-aur.sh /tmp/yay-build/
 
 RUN useradd -m -G wheel -s /bin/bash builder && passwd -d builder
 RUN chown -R builder:builder /tmp/yay-build
@@ -23,8 +24,9 @@ RUN echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 USER builder
 WORKDIR /tmp/yay-build
-RUN ./arch-build-nonroot.sh
+RUN ./arch-build-aur.sh
 
 USER root
 RUN rm -rf /tmp/yay-build
 RUN sed -i '$d' /etc/sudoers
+RUN rm /arch-build-aur.sh /aur.packages

@@ -1,0 +1,11 @@
+gallery-dl-bin
+pandoc-bin
+paru-bin
+shellcheck-bin
+vscodium-bin
+#python-curl-cffi 
+#libcurl-impersonate-bin
+#android-studio
+# usb connect to ios:
+#libimobiledevice-git 
+#libplist-git 
