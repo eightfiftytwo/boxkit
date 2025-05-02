@@ -7,12 +7,12 @@ sudo locale-gen
 sudo sed -i '/Color/s/^#//g' /etc/pacman.conf
 sudo sed -i 's/.*ParallelDownloads = 5.*/ParallelDownloads = 20/' /etc/pacman.conf
 sudo pacman -S --needed --noconfirm reflector
-sudo reflector \
-  --country us \
-  --protocol https \
-  --sort rate \
-  --latest 10 \
-  --save /etc/pacman.d/mirrorlist
+# sudo reflector \
+#   --country us \
+#   --protocol https \
+#   --sort rate \
+#   --latest 10 \
+#   --save /etc/pacman.d/mirrorlist
 
 # Update
 sudo pacman -Syu --noconfirm
@@ -21,14 +21,14 @@ sudo pacman -S --needed --noconfirm base-devel fish git
 # AUR helper setup
 # https://gustawdaniel.com/posts/en/how-to-install-yay-on-pure-archlinux-image/
 mkdir -p /tmp/yay-build
-useradd -m -G wheel builder && passwd -d builder
+# useradd -m -G wheel builder && passwd -d builder
 chown -R builder:builder /tmp/yay-build
 echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
-su - builder -c "git clone https://aur.archlinux.org/yay.git /tmp/yay-build/yay"
+su - builder -c "git clone https://aur.archlinux.org/yay-bin.git /tmp/yay-build/yay"
 su - builder -c "cd /tmp/yay-build/yay && makepkg -si --noconfirm"
 
 # Install packages
-grep -v '^#' ./arch.packages | xargs su - builder -c "yay -S --needed --noconfirm \{\}"
+grep -v '^#' ./arch.packages | xargs su - builder -c "yay -S --needed --noconfirm {}"
 
 # sudo pacman -S --needed --noconfirm \
 #   fish neovim bat fd fzf eza ripgrep-all tealdeer fastfetch \
