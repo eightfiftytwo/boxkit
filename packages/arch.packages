@@ -55,8 +55,8 @@ python-websockets
 pipewire-jack 
 wireplumber
 # Save disk space
-#intellij-idea-community-edition 
-#jdk-openjdk
+intellij-idea-community-edition 
+jdk-openjdk
 # Archived packages
 #helix 
 #lapce 
