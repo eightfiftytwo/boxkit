@@ -23,6 +23,7 @@ jless
 tokei 
 hyperfine 
 just
+zellij 
 yazi
 # weak deps
 jq 
@@ -55,8 +56,8 @@ python-websockets
 pipewire-jack 
 wireplumber
 # Save disk space
-intellij-idea-community-edition 
-jdk-openjdk
+#intellij-idea-community-edition 
+#jdk-openjdk
 # Archived packages
 #helix 
 #lapce 
@@ -64,7 +65,6 @@ jdk-openjdk
 #httpie 
 #difftastic 
 #procs 
-#zellij 
 #nmap 
 #sshfs 
 #fuse2 
