@@ -1,4 +1,5 @@
 #!/bin/bash
+
 # Configure locale
 sudo sed -i '/en.HK.UTF-8/s/^#//g' /etc/locale.gen
 sudo locale-gen

@@ -1,5 +1,6 @@
 #!/bin/bash
-# Install and configure yay
+
+# Install AUR helper
 git clone https://aur.archlinux.org/yay-bin.git
 (
   cd yay-bin || exit
@@ -7,5 +8,5 @@ git clone https://aur.archlinux.org/yay-bin.git
 )
 rm -rf ./yay-bin
 
-# Install aur packages
+# Install AUR packages
 grep -v '^#' ./aur.packages | xargs yay -S --needed --noconfirm

@@ -6,6 +6,7 @@ vscodium-bin
 #python-curl-cffi 
 #libcurl-impersonate-bin
 #android-studio
+
 # usb connect to ios:
 #libimobiledevice-git 
 #libplist-git 
