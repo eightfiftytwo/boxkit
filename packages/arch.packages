@@ -14,6 +14,7 @@ age
 man-db 
 man-pages 
 wl-clipboard 
+
 # network, json and misc shell
 xh 
 iperf3 
@@ -25,6 +26,7 @@ hyperfine
 just
 zellij 
 yazi
+
 # weak deps
 jq 
 7zip 
@@ -32,6 +34,7 @@ poppler
 zoxide 
 imagemagick 
 chafa
+
 # programming
 gcc 
 go 
@@ -42,9 +45,11 @@ npm
 pnpm 
 cmake 
 zed 
+emacs-wayland
 lazygit 
 gitui 
 git-delta 
+
 # media
 yt-dlp 
 ffmpeg 
@@ -55,9 +60,11 @@ python-brotli
 python-websockets
 pipewire-jack 
 wireplumber
+
 # Save disk space
 #intellij-idea-community-edition 
 #jdk-openjdk
+
 # Archived packages
 #helix 
 #lapce 
