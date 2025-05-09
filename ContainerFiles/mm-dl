@@ -8,7 +8,8 @@ LABEL com.github.containers.toolbox="true" \
 # Copy the setup scripts and package list
 COPY ../scripts/arch-build.sh /
 COPY ../scripts/distrobox-shims.sh /
-COPY ../packages/arch.packages /
+# COPY ../packages/arch.packages /
+RUN touch /arch.packages
 # COPY ../packages/aur.packages /
 
 # Run the setup scripts
@@ -27,7 +28,7 @@ RUN echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 USER builder
 WORKDIR /tmp/yay-build
 COPY ../scripts/arch-build-aur.sh ./
-COPY ../packages/aur.packages ./
+COPY ../packages/mm-dl.packages ./aur.packages
 RUN /tmp/yay-build/arch-build-aur.sh
 RUN rm ./arch-build-aur.sh ./aur.packages
 
