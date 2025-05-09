@@ -5,6 +5,7 @@ bat
 fd 
 fzf 
 eza 
+ripgrep
 tealdeer 
 fastfetch 
 restic 
