@@ -9,7 +9,7 @@ LABEL com.github.containers.toolbox="true" \
 COPY ../scripts/arch-build.sh /
 COPY ../scripts/distrobox-shims.sh /
 # COPY ../packages/arch.packages /
-RUN touch /arch.packages
+RUN echo "fish" | tee /arch.packages
 # COPY ../packages/aur.packages /
 
 # Run the setup scripts
