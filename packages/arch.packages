@@ -27,6 +27,7 @@ hyperfine
 just
 zellij 
 yazi
+atuin
 
 # weak deps
 jq 
@@ -45,11 +46,12 @@ python-pip
 npm 
 pnpm 
 cmake 
-zed 
-emacs-wayland
 lazygit 
 gitui 
 git-delta 
+zed 
+emacs-wayland
+neovide
 
 # media
 yt-dlp 
