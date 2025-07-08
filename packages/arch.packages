@@ -65,7 +65,7 @@ pipewire-jack
 wireplumber
 
 # Save disk space
-#intellij-idea-community-edition 
+intellij-idea-community-edition 
 #jdk-openjdk
 
 # Archived packages
