@@ -3,6 +3,7 @@ pandoc-bin
 paru-bin
 shellcheck-bin
 vscodium-bin
+gleam-bin
 #python-curl-cffi 
 #libcurl-impersonate-bin
 #android-studio

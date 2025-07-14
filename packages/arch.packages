@@ -42,7 +42,6 @@ gcc
 clang
 go 
 elixir 
-gleam-bin
 erlang
 python-pip 
 npm 
