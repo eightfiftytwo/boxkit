@@ -39,8 +39,10 @@ chafa
 
 # programming
 gcc 
+clang
 go 
 elixir 
+gleam-bin
 erlang
 python-pip 
 npm 
@@ -52,6 +54,9 @@ git-delta
 zed 
 emacs-wayland
 neovide
+cgdb
+valgrind
+inotify-tools
 
 # media
 yt-dlp 
@@ -65,7 +70,7 @@ pipewire-jack
 wireplumber
 
 # Save disk space
-intellij-idea-community-edition 
+#intellij-idea-community-edition 
 #jdk-openjdk
 
 # Archived packages
