@@ -8,9 +8,7 @@ LABEL com.github.containers.toolbox="true" \
 # Copy the setup scripts and package list
 COPY ../scripts/arch-build.sh /
 COPY ../scripts/distrobox-shims.sh /
-# COPY ../packages/arch.packages /
 RUN echo "fish" | tee /arch.packages
-# COPY ../packages/aur.packages /
 
 # Run the setup scripts
 RUN chmod +x arch-build.sh distrobox-shims.sh && /arch-build.sh
@@ -19,7 +17,7 @@ RUN rm /arch-build.sh /distrobox-shims.sh /arch.packages
 # Setup AUR helper
 # adapted from: https://gustawdaniel.com/posts/en/how-to-install-yay-on-pure-archlinux-image/
 RUN mkdir -p /tmp/yay-build
-COPY ../scripts/arch-build-aur.sh /tmp/yay-build/
+COPY ../scripts/get-yay.sh /tmp/yay-build/
 
 RUN useradd -m -G wheel -s /bin/bash builder && passwd -d builder
 RUN chown -R builder:builder /tmp/yay-build
@@ -27,11 +25,17 @@ RUN echo 'builder ALL=(ALL) NOPASSWD: ALL' >> /etc/sudoers
 
 USER builder
 WORKDIR /tmp/yay-build
-COPY ../scripts/arch-build-aur.sh ./
-COPY ../packages/mm-dl.packages ./aur.packages
-RUN /tmp/yay-build/arch-build-aur.sh
-RUN rm ./arch-build-aur.sh ./aur.packages
+COPY ../scripts/get-yay.sh ./
+COPY ../packages/media.packages ./aur.packages
+RUN /tmp/yay-build/get-yay.sh
+RUN rm ./get-yay.sh ./aur.packages
 
 USER root
 RUN rm -rf /tmp/yay-build
 RUN sed -i '$d' /etc/sudoers
+
+RUN curl -o /usr/local/yt-dlp -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux
+RUN chmod -x /usr/local/yt-dlp
+
+RUN curl -o /usr/local/gallery-dl -L https://github.com/mikf/gallery-dl/releases/download/latest/gallery-dl.bin
+RUN chmod -x /usr/local/gallery-dl

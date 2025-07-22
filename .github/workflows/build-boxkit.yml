@@ -30,7 +30,7 @@ jobs:
         containerfile: 
           - arch
           - fedora
-          - mm-dl
+          - media
     steps:
       # Clone code to runner
       - name: Checkout
