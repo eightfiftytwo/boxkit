@@ -37,5 +37,5 @@ RUN sed -i '$d' /etc/sudoers
 RUN curl -o /usr/local/yt-dlp -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp_linux
 RUN chmod -x /usr/local/yt-dlp
 
-RUN curl -o /usr/local/gallery-dl -L https://github.com/mikf/gallery-dl/releases/download/latest/gallery-dl.bin
+RUN curl -o /usr/local/gallery-dl -L https://github.com/mikf/gallery-dl/releases/latest/download/gallery-dl.bin
 RUN chmod -x /usr/local/gallery-dl
