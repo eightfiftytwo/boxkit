@@ -1,9 +1,11 @@
 gallery-dl-bin
 pandoc-bin
-paru-bin
 shellcheck-bin
 vscodium-bin
+watchman-bin
 gleam-bin
+elm-bin
+#paru-bin
 #python-curl-cffi 
 #libcurl-impersonate-bin
 #android-studio

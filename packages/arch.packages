@@ -40,22 +40,29 @@ chafa
 # programming
 gcc 
 clang
+cmake 
 go 
 elixir 
 erlang
 python-pip 
 npm 
 pnpm 
-cmake 
 lazygit 
 gitui 
 git-delta 
+
+# 61c
+cgdb
+valgrind
+
+# 169a ruby
+libyaml
+inotify-tools
+
+# code editors
 zed 
 emacs-wayland
 neovide
-cgdb
-valgrind
-inotify-tools
 
 # media
 yt-dlp 
