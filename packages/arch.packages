@@ -58,6 +58,7 @@ valgrind
 # 169a ruby
 libyaml
 inotify-tools
+postgresql-libs
 
 # code editors
 zed 
