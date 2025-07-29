@@ -5,12 +5,12 @@ vscodium-bin
 watchman-bin
 gleam-bin
 elm-bin
-pijul
 
 #paru-bin
 #python-curl-cffi 
 #libcurl-impersonate-bin
 #android-studio
+#pijul
 
 # usb connect to ios:
 #libimobiledevice-git 
