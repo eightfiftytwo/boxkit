@@ -43,7 +43,6 @@ clang
 cmake 
 go 
 elixir 
-erlang
 python-pip 
 npm 
 pnpm 
