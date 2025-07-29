@@ -11,12 +11,12 @@ sudo locale-gen
 sudo sed -i '/Color/s/^#//g' /etc/pacman.conf
 sudo sed -i 's/.*ParallelDownloads = 5.*/ParallelDownloads = 20/' /etc/pacman.conf
 sudo pacman -S --needed --noconfirm reflector
-# sudo reflector \
-#   --country us \
-#   --protocol https \
-#   --sort rate \
-#   --latest 10 \
-#   --save /etc/pacman.d/mirrorlist
+sudo reflector \
+    --country us \
+    --protocol https \
+    --sort rate \
+    --score 10 \
+    --save /etc/pacman.d/mirrorlist
 
 # Update
 sudo pacman -Syu --noconfirm
