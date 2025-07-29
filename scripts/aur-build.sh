@@ -10,3 +10,5 @@ rm -rf ./yay-bin
 
 # Install AUR packages
 grep -v '^#' ./aur.packages | xargs yay -S --needed --noconfirm
+
+yay -Scc
