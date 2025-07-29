@@ -54,6 +54,7 @@ git-delta
 # 61c
 cgdb
 valgrind
+tinyxxd
 
 # 169a ruby
 libyaml

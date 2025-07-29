@@ -5,6 +5,8 @@ vscodium-bin
 watchman-bin
 gleam-bin
 elm-bin
+pijul
+
 #paru-bin
 #python-curl-cffi 
 #libcurl-impersonate-bin
