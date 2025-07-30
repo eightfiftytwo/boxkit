@@ -1,10 +1,10 @@
-gallery-dl-bin
-pandoc-bin
-shellcheck-bin
+#gallery-dl-bin
+#pandoc-bin
+#shellcheck-bin
 vscodium-bin
 watchman-bin
-gleam-bin
-elm-bin
+#gleam-bin
+#elm-bin
 
 #paru-bin
 #python-curl-cffi 

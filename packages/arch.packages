@@ -8,24 +8,23 @@ eza
 ripgrep-all 
 tealdeer 
 fastfetch 
-restic 
-chezmoi 
-age 
+# restic 
+# chezmoi 
+# age 
 man-db 
 man-pages 
 wl-clipboard 
 
 # network, json and misc shell
-xh 
+# xh 
 iperf3 
 nmap
-cosign
-fx 
-jless 
-tokei 
-hyperfine 
-just
-zellij 
+# cosign
+# fx 
+# tokei 
+# hyperfine 
+# just
+# zellij 
 yazi
 atuin
 
@@ -41,14 +40,14 @@ chafa
 gcc 
 clang
 cmake 
-go 
+# go 
 elixir 
 python-pip 
 npm 
 pnpm 
-lazygit 
-gitui 
-git-delta 
+# lazygit 
+# gitui 
+# git-delta 
 
 # 61c
 cgdb
@@ -69,10 +68,10 @@ neovide
 yt-dlp 
 ffmpeg 
 aria2 
-python-secretstorage 
-python-mutagen 
-python-brotli 
-python-websockets
+# python-secretstorage 
+# python-mutagen 
+# python-brotli 
+# python-websockets
 pipewire-jack 
 wireplumber
 
