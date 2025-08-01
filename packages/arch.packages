@@ -1,3 +1,5 @@
+# vim: commentstring=#\ %s
+
 # basic shell utils
 fish 
 neovim 
@@ -5,9 +7,9 @@ bat
 fd 
 fzf 
 eza 
-ripgrep-all 
+# ripgrep-all 
 tealdeer 
-fastfetch 
+# fastfetch 
 # restic 
 # chezmoi 
 # age 

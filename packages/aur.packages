@@ -1,10 +1,12 @@
-#gallery-dl-bin
-#pandoc-bin
-#shellcheck-bin
+# vim: commentstring=#\ %s
+
 vscodium-bin
-watchman-bin
-#gleam-bin
-#elm-bin
+# watchman-bin
+# gallery-dl-bin
+# pandoc-bin
+# shellcheck-bin
+# gleam-bin
+# elm-bin
 
 #paru-bin
 #python-curl-cffi 

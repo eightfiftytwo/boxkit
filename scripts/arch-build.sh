@@ -24,3 +24,5 @@ sudo pacman -S --needed --noconfirm base-devel fish git
 
 # Install packages
 grep -v '^#' ./arch.packages | xargs pacman -S --needed --noconfirm
+
+pacman -Scc --noconfirm
