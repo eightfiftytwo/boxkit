@@ -10,6 +10,14 @@ COPY ../scripts/fedora-build.sh /
 COPY ../scripts/distrobox-shims.sh /
 COPY ../packages/fedora.packages /
 
+RUN echo "max_parallel_downloads=20" | sudo tee -a /etc/dnf/dnf.conf
+RUN sudo dnf install -y \
+  https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-"$(rpm -E %fedora)".noarch.rpm \
+  https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-"$(rpm -E %fedora)".noarch.rpm \
+  ; sudo dnf -y clean all
+
+RUN sudo dnf upgrade --refresh -y ; sudo dnf -y clean all
+
 # Run the setup scripts
 RUN chmod +x fedora-build.sh distrobox-shims.sh && /fedora-build.sh
 RUN rm /fedora-build.sh /distrobox-shims.sh /fedora.packages
