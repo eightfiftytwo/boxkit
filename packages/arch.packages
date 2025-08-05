@@ -28,15 +28,15 @@ nmap
 # just
 # zellij 
 yazi
-atuin
+# atuin
 
 # weak deps
-jq 
-7zip 
-poppler 
-zoxide 
-imagemagick 
-chafa
+# jq 
+# 7zip 
+# poppler 
+# zoxide 
+# imagemagick 
+# chafa
 
 # programming
 gcc 
@@ -45,8 +45,8 @@ cmake
 # go 
 elixir 
 python-pip 
-npm 
-pnpm 
+# npm 
+# pnpm 
 # lazygit 
 # gitui 
 # git-delta 
@@ -74,8 +74,8 @@ aria2
 # python-mutagen 
 # python-brotli 
 # python-websockets
-pipewire-jack 
-wireplumber
+# pipewire-jack 
+# wireplumber
 
 # Save disk space
 #intellij-idea-community-edition 
