@@ -5,7 +5,7 @@ fish
 neovim 
 bat 
 fd 
-fzf 
+# fzf 
 eza 
 # ripgrep-all 
 tealdeer 
@@ -43,8 +43,8 @@ gcc
 clang
 cmake 
 # go 
-elixir 
-python-pip 
+# elixir 
+# python-pip 
 # npm 
 # pnpm 
 # lazygit 
@@ -52,14 +52,14 @@ python-pip
 # git-delta 
 
 # 61c
-cgdb
-valgrind
-tinyxxd
+# cgdb
+# valgrind
+# tinyxxd
 
 # 169a ruby
-libyaml
-inotify-tools
-postgresql-libs
+# libyaml
+# inotify-tools
+# postgresql-libs
 
 # code editors
 zed 
