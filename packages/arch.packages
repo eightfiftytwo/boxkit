@@ -67,7 +67,7 @@ emacs-wayland
 neovide
 
 # media
-yt-dlp 
+# yt-dlp 
 ffmpeg 
 aria2 
 # python-secretstorage 
