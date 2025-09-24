@@ -62,13 +62,13 @@ cmake
 # postgresql-libs
 
 # code editors
-zed 
+# zed 
 emacs-wayland
 neovide
 
 # media
 # yt-dlp 
-ffmpeg 
+# ffmpeg 
 # aria2 
 # python-secretstorage 
 # python-mutagen 
