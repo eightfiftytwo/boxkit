@@ -8,7 +8,7 @@ neovim
 # fzf 
 # eza 
 # ripgrep-all 
-tealdeer 
+# tealdeer 
 # fastfetch 
 # restic 
 # chezmoi 
@@ -39,7 +39,6 @@ nmap
 # chafa
 
 # programming
-gcc 
 clang
 cmake 
 # go 
@@ -63,8 +62,8 @@ cmake
 
 # code editors
 # zed 
-emacs-wayland
-neovide
+# emacs-wayland
+# neovide
 
 # media
 # yt-dlp 
