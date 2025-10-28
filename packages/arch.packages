@@ -33,14 +33,14 @@ nmap
 # weak deps
 # jq 
 # 7zip 
-# poppler 
+poppler 
 # zoxide 
 # imagemagick 
 # chafa
 
 # programming
-clang
-cmake 
+# clang
+# cmake 
 # go 
 # elixir 
 # python-pip 
