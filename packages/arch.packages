@@ -51,7 +51,8 @@ poppler
 # git-delta 
 
 # 61c
-# cgdb
+cgdb
+nasm
 # valgrind
 # tinyxxd
 
