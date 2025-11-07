@@ -15,7 +15,7 @@ sudo reflector \
     --country us \
     --protocol https \
     --sort rate \
-    --score 10 \
+    --score 20 \
     --save /etc/pacman.d/mirrorlist
 
 # Update

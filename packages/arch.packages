@@ -16,6 +16,7 @@ neovim
 man-db 
 man-pages 
 wl-clipboard 
+xorg-xeyes
 
 # network, json and misc shell
 # xh 
@@ -63,7 +64,7 @@ nasm
 
 # code editors
 # zed 
-# emacs-wayland
+emacs-wayland
 # neovide
 
 # media
@@ -78,8 +79,7 @@ nasm
 # wireplumber
 
 # Save disk space
-#intellij-idea-community-edition 
-#jdk-openjdk
+# intellij-idea-community-edition 
 
 # Archived packages
 #helix 
