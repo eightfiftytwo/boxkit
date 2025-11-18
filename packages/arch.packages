@@ -43,7 +43,7 @@ poppler
 # clang
 # cmake 
 # go 
-# elixir 
+elixir 
 # python-pip 
 # npm 
 # pnpm 
