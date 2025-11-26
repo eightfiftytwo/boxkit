@@ -65,18 +65,18 @@ nasm
 
 # code editors
 # zed 
-emacs-wayland
+# emacs-wayland
 # neovide
 
 # media
 # yt-dlp 
-# ffmpeg 
+ffmpeg 
+pipewire-jack 
 # aria2 
 # python-secretstorage 
 # python-mutagen 
 # python-brotli 
 # python-websockets
-# pipewire-jack 
 # wireplumber
 
 # Save disk space
