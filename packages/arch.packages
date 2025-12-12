@@ -25,7 +25,7 @@ iperf3
 nmap
 # cosign
 # fx 
-# tokei 
+tokei 
 # hyperfine 
 # just
 # zellij 
@@ -79,11 +79,7 @@ emacs-wayland
 # yt-dlp 
 ffmpeg 
 pipewire-jack 
-# aria2 
-# python-secretstorage 
-# python-mutagen 
-# python-brotli 
-# python-websockets
+aria2 
 # wireplumber
 
 # Save disk space
