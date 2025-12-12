@@ -49,6 +49,7 @@ cmake
 elixir 
 gleam
 erlang-headless
+rebar3
 opam
 # python-pip 
 # npm 
