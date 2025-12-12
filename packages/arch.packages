@@ -17,6 +17,7 @@ man-db
 man-pages 
 wl-clipboard 
 xorg-xeyes
+inotify-tools
 
 # network, json and misc shell
 # xh 
@@ -40,14 +41,19 @@ poppler
 # chafa
 
 # programming
-# clang
-# cmake 
+clang
+llvm
+lld
+cmake 
 # go 
 elixir 
+gleam
+erlang-headless
 opam
 # python-pip 
 # npm 
 # pnpm 
+
 # lazygit 
 # gitui 
 # git-delta 
@@ -65,7 +71,7 @@ nasm
 
 # code editors
 # zed 
-# emacs-wayland
+emacs-wayland
 # neovide
 
 # media
