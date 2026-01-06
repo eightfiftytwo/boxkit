@@ -3,9 +3,12 @@
 # basic shell utils
 fish 
 neovim 
-# bat 
-# fd 
-# fzf 
+bat 
+fd 
+fzf 
+ripgrep 
+dua-cli
+rclone
 # eza 
 # ripgrep-all 
 # tealdeer 
