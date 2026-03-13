@@ -1,6 +1,7 @@
 # vim: commentstring=#\ %s
 
 vscodium-bin
+vscodium-bin-marketplace
 # watchman-bin
 # gallery-dl-bin
 # pandoc-bin
