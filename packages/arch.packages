@@ -1,6 +1,6 @@
 # vim: commentstring=#\ %s
 
-# basic shell utils
+## basic shell utils
 fish 
 neovim 
 bat 
@@ -22,38 +22,38 @@ wl-clipboard
 xorg-xeyes
 inotify-tools
 
-# network, json and misc shell
+## network, json and misc shell
 # xh 
 iperf3 
 nmap
 # cosign
 # fx 
-tokei 
+# tokei 
 # hyperfine 
 # just
 # zellij 
 # yazi
 # atuin
 
-# weak deps
+## weak deps
 # jq 
 # 7zip 
 poppler 
 # zoxide 
 # imagemagick 
-# chafa
+chafa
 
-# programming
-clang
-llvm
-lld
+## programming
+# clang
+# llvm
+# lld
 cmake 
 # go 
 elixir 
 gleam
 erlang-headless
 rebar3
-opam
+# opam
 # python-pip 
 # npm 
 # pnpm 
@@ -62,31 +62,43 @@ opam
 # gitui 
 # git-delta 
 
-# 61c
+## tauri
+webkit2gtk-4.1
+base-devel
+curl
+wget
+file
+openssl
+appmenu-gtk-module
+libappindicator-gtk3
+librsvg
+xdotool
+
+## 61c
 cgdb
 nasm
 # valgrind
 # tinyxxd
 
-# 169a ruby
-# libyaml
-# inotify-tools
-# postgresql-libs
+## 169a ruby
+libyaml
+inotify-tools
+postgresql-libs
 
-# code editors
-# zed 
+## code editors
+zed 
 emacs-wayland
 neovide
 # intellij-idea-community-edition 
 
-# media
+## media
 # yt-dlp 
 ffmpeg 
 pipewire-jack 
 aria2 
 # wireplumber
 
-# Archived packages
+## Archived packages
 #helix 
 #lapce 
 #sd 
