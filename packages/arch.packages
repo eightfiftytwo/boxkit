@@ -8,7 +8,7 @@ fd
 fzf 
 ripgrep 
 dua-cli
-rclone
+# rclone
 # eza 
 # ripgrep-all 
 # tealdeer 
@@ -94,8 +94,8 @@ neovide
 
 ## media
 # yt-dlp 
-ffmpeg 
-pipewire-jack 
+# ffmpeg 
+# pipewire-jack 
 aria2 
 # wireplumber
 
