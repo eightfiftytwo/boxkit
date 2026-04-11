@@ -75,6 +75,9 @@ libappindicator-gtk3
 librsvg
 xdotool
 
+## ???
+vulkan-radeon
+
 ## 61c
 cgdb
 nasm
