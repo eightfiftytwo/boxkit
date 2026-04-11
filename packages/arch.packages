@@ -63,17 +63,17 @@ rebar3
 # gitui 
 # git-delta 
 
-## tauri
-webkit2gtk-4.1
-base-devel
-curl
-wget
-file
-openssl
-appmenu-gtk-module
-libappindicator-gtk3
-librsvg
-xdotool
+# ## tauri
+# webkit2gtk-4.1
+# base-devel
+# curl
+# wget
+# file
+# openssl
+# appmenu-gtk-module
+# libappindicator-gtk3
+# librsvg
+# xdotool
 
 ## ???
 vulkan-radeon
