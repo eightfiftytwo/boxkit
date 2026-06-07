@@ -47,17 +47,20 @@ chafa
 ## programming
 # clang
 # llvm
+lldb
 # lld
 cmake 
+musl
 # go 
-elixir 
-gleam
-erlang-headless
-rebar3
+# elixir 
+# gleam
+# erlang-headless
+# rebar3
 # opam
 # python-pip 
 # npm 
 # pnpm 
+protobuf
 
 # lazygit 
 # gitui 
