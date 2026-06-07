@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-toolbox:43
+FROM quay.io/fedora/fedora-toolbox:44
 
 LABEL com.github.containers.toolbox="true" \
       usage="This image is meant to be used with the toolbox or distrobox command" \
